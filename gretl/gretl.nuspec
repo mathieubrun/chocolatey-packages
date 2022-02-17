@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>gretl</id>
-    <version>2021.210930</version>
+    <version>2022.220202</version>
     <packageSourceUrl>https://github.com/overag3/chocolatey-packages/tree/main/gretl</packageSourceUrl>
     <owners>overage, gfe</owners>
     <!-- ============================== -->
@@ -20,7 +20,10 @@
     <bugTrackerUrl>https://sourceforge.net/p/gretl/bugs/</bugTrackerUrl>
     <tags>gretl econometric analysis</tags>
     <summary>Gretl is an econometrics package, including a shared library, a command-line client program and agraphical user interface.</summary>
-    <description>Gretl Is a cross-platform software package for econometric analysis, written in the C programming language. It is free, open-source software. You may redistribute it and/or modify it under the terms of the GNU General Public License (GPL) as published by the Free Software Foundation.</description>
+    <description><![CDATA[Gretl Is a cross-platform software package for econometric analysis, written in the C programming language.
+
+It is free, open-source software. You may redistribute it and/or modify it under the terms of the GNU General Public License (GPL) as published by the Free Software Foundation.
+]]></description>
     <releaseNotes>http://gretl.sourceforge.net/ChangeLog.html</releaseNotes>
     <!-- =============================== -->
   </metadata>
