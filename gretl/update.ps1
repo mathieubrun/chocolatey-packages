@@ -16,13 +16,17 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-    $url32 = $download_page.links | Where-Object href -Match 'gretl-(?<version>[\d\.]+)-32.exe$' | Select-Object -First 1 -ExpandProperty href
-    $url64 = $download_page.links | Where-Object href -Match 'gretl-(?<version>[\d\.]+)-64.exe$' | Select-Object -First 1 -ExpandProperty href
+    $download_page = Invoke-WebRequest -Uri $releases
+    $url32 = $download_page.links | Where-Object href -Match 'gretl-(.*)-32.exe$' | Select-Object -First 1 -ExpandProperty href
+    $url64 = $download_page.links | Where-Object href -Match 'gretl-(.*)-64.exe$' | Select-Object -First 1 -ExpandProperty href
 
-    $release_date = $download_page.ParsedHtml.all.tags("p") | Where-Object { $_.InnerText -match 'latest release \(\w+ \d+, \d{4}\)' } | Select-Object -First 1 -ExpandProperty InnerText
-    $date = [datetime]::ParseExact($release_date, 'MMM d, yyyy', [cultureinfo]::InvariantCulture)
-    $version = $date.ToString('yyyy.yyMMdd')
+    $download_page.ParsedHtml.all.tags("p") | Where-Object { $_.InnerText -match 'latest release \((?<releasedate>\w+ \d+, \d{4})\)' } | Select-Object -First 1 -ExpandProperty InnerText
+    if ($Matches.releasedate -ne '') {
+        $date = [datetime]::ParseExact($Matches.releasedate, 'MMM d, yyyy', [cultureinfo]::InvariantCulture)
+        $version = $date.ToString('yyyy.yyMMdd')
+    } else {
+        throw 'No release date match to defined mask'
+    }
 
     return @{
         Version = $version
