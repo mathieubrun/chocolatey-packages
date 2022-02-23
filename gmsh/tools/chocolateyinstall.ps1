@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
 $url64 = 'https://gmsh.info/bin/Windows/gmsh-4.9.5-Windows64.zip'
-$installDir = "C:\gmsh"
+$installDir = 'C:\gmsh'
 $version = '4.9.5'
 $dirToExtract = "gmsh-$version-Windows64"
 
@@ -20,3 +20,6 @@ $exeLocation = "$installDir\$dirToExtract\gmsh.exe"
 
 # Create Start Menu shorcuts
 Install-ChocolateyShortcut -shortcutFilePath "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\Gmsh\Gmsh.lnk" -targetPath $exeLocation -WorkingDirectory "$installDir\$dirToExtract" -IconLocation $exeLocation
+
+# Remove old version of Gmsh
+Get-ChildItem -Path $installDir -Exclude $dirToExtract | Remove-Item -Recurse -Force -ErrorAction SilentlyContinue
