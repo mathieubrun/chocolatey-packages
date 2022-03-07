@@ -14,7 +14,7 @@
     <authors>SUSE</authors>
     <projectUrl>https://rancherdesktop.io/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/overag3/chocolatey-packages/rancher-desktop/rancher-desktop.png</iconUrl>
-    <copyright>2022</copyright>
+    <copyright>© 2022 SUSE</copyright>
     <licenseUrl>https://github.com/rancher-sandbox/rancher-desktop/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/rancher-sandbox/rancher-desktop/</projectSourceUrl>
