@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $latestrelease -UseBasicParsing
-    $regex = 'FreeFEM-.*-win7-64\.exe$'
+    $regex = 'FreeFEM-.*-win64\.exe$'
     $url = ($download_page.Links | Where-Object href -match $regex | Select-Object -First 1 -ExpandProperty href) -split '/', 5 | Select-Object -Last 1
     
     $url -match '\/v(?<version>.*)\/'
