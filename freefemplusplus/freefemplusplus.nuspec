@@ -14,6 +14,7 @@
     <authors>FreeFEM</authors>
     <projectUrl>http://www3.freefem.org/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/overag3/chocolatey-packages/freefemplusplus/freefem.png</iconUrl>
+    <licenseUrl>https://github.com/FreeFem/FreeFem-sources/blob/master/LICENSE.md</licenseUrl>
     <tags>freefemplusplus equation solver</tags>
     <projectSourceUrl>https://github.com/FreeFem/FreeFem-sources</projectSourceUrl>
     <docsUrl>https://doc.freefem.org/</docsUrl>
