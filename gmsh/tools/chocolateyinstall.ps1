@@ -1,14 +1,14 @@
 ﻿$ErrorActionPreference = 'Stop'
-$url64 = 'https://gmsh.info/bin/Windows/gmsh-4.9.5-Windows64.zip'
+$url64 = 'https://gmsh.info/bin/Windows/gmsh-4.10.0-Windows64.zip'
 $installDir = 'C:\gmsh'
-$version = '4.9.5'
+$version = '4.10.0'
 $dirToExtract = "gmsh-$version-Windows64"
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $installDir
   url64bit       = $url64
-  checksum64     = '83a7aef54273cf311c0ae7355424351a8c5a6ae89d7b82fd07dce8714f457edf'
+  checksum64     = 'f78230b6ccd04d92221e3ce024b12a9a1b39ce023d87bc1e586c6c8c94a4b3be'
   checksumType64 = 'sha256'
 }
 
