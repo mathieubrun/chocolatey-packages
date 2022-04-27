@@ -4,7 +4,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>httpie-desktop</id>
-    <version>2022.6.0</version>
+    <version>2022.7.0</version>
     <packageSourceUrl>https://github.com/overag3/chocolatey-packages/tree/main/httpie-desktop</packageSourceUrl>
     <owners>overage</owners>
     <!-- ============================== -->
@@ -30,7 +30,7 @@ All the user-friendliness of our Terminal version, now wrapped up in a sleek gra
 - Go back to previous requests in your History
 - Build and preview requests without sending them
 - Navigate between the App and the CLI
-    ]]></description>
+]]></description>
     <!-- =============================== -->
   </metadata>
   <files>
