@@ -8,3 +8,6 @@ if (Test-Path $installDir) {
 
 # Delete additional shortcuts
 Remove-Item -Recurse "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\Gmsh" -Force -ErrorAction SilentlyContinue
+
+# Delete shim
+Uninstall-BinFile -Name "gmsh"
