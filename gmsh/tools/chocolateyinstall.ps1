@@ -21,5 +21,8 @@ $exeLocation = "$installDir\$dirToExtract\gmsh.exe"
 # Create Start Menu shorcuts
 Install-ChocolateyShortcut -shortcutFilePath "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\Gmsh\Gmsh.lnk" -targetPath $exeLocation -WorkingDirectory "$installDir\$dirToExtract" -IconLocation $exeLocation
 
+# Create shim
+Install-BinFile -Name "gmsh" -Path "$exeLocation"
+
 # Remove old version of Gmsh
 Get-ChildItem -Path $installDir -Exclude $dirToExtract | Remove-Item -Recurse -Force -ErrorAction SilentlyContinue
