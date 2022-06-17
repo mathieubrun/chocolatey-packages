@@ -5,7 +5,7 @@
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>gmsh</id>
     <version>4.10.2</version>
-    <packageSourceUrl>https://github.com/overag3/chocolatey-packages/tree/main/gretl</packageSourceUrl>
+    <packageSourceUrl>https://github.com/overag3/chocolatey-packages/tree/main/gmsh</packageSourceUrl>
     <owners>overage, gfe</owners>
     <!-- ============================== -->
 
