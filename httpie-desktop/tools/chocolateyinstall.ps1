@@ -1,5 +1,5 @@
 ﻿$ErrorActionPreference = 'Stop'
-$url = 'https://github.com/httpie/desktop/releases/download/v2022.12.0/HTTPie-Setup-2022.12.0.exe'
+$url = 'https://github.com/httpie/desktop/releases/download/v2022.13.0/HTTPie-Setup-2022.13.0.exe'
 $pp = Get-PackageParameters
 
 $args = '/S'
@@ -10,7 +10,7 @@ $packageArgs = @{
   fileType       = 'EXE'
   url            = $url
   softwareName   = 'HTTPie*'
-  checksum       = '04cb7165e2afddb0fb493074091602d2caf3c1b054c3da162dffa9983df2802d'
+  checksum       = '2d60ae2a177dd5ed9d2b829a573d125a8f6eff184570f44534c9d125cd5ab04c'
   checksumType   = 'sha256'
   silentArgs     = $args
   validExitCodes = @(0)
