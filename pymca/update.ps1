@@ -21,7 +21,7 @@ function global:au_GetLatest {
 
     return @{
         Version = $version
-        URL64   = "https://sourceforge.net/projects/pymca/files/pymca/PyMca ${version}/pymca${version}-win64.exe"
+        URL64   = "https://sourceforge.net/projects/pymca/files/pymca/PyMca${version}/pymca${version}-win64.exe"
     }
 }
 
