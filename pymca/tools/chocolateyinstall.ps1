@@ -1,13 +1,13 @@
 ﻿$ErrorActionPreference = 'Stop'
-$url64 = 'https://sourceforge.net/projects/pymca/files/pymca/PyMca 5.7.4/pymca5.7.4-win64.exe'
-$version = [version]'5.7.4'
+$url64 = 'https://sourceforge.net/projects/pymca/files/pymca/PyMca5.7.5/pymca5.7.5-win64.exe'
+$version = [version]'5.7.5'
 
 $packageArgs = @{
     packageName    = $env:ChocolateyPackageName
     fileType       = 'EXE'
     url64bit       = $url64
     softwareName   = 'pymca*'
-    checksum64     = '35d8d95b52bec59d62d57df4e25daa70ceaf0ec565390564038fddd867e0102a'
+    checksum64     = '7a5e08fc98a544378f0db047f487fe01110fb2bb04db5088d9cb81a9cfa798e3'
     checksumType64 = 'sha256'
     silentArgs     = '/S'
     validExitCodes = @(0)
