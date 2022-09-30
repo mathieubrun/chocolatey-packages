@@ -2,7 +2,7 @@ param([string]$IncludeStream, [switch]$Force)
 
 Import-Module au
 
-$releases = 'http://purplepen.golde.org/downloads'
+$releases = 'https://purplepen.golde.org/downloads'
 
 function global:au_SearchReplace {
     @{
