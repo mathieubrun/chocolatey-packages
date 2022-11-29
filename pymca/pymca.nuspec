@@ -4,7 +4,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>pymca</id>
-    <version>5.7.5</version>
+    <version>5.8.0</version>
     <packageSourceUrl>https://github.com/overag3/chocolatey-packages/tree/main/pymca</packageSourceUrl>
     <owners>overage, gfe</owners>
     <!-- ============================== -->
