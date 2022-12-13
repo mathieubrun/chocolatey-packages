@@ -4,7 +4,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>gretl</id>
-    <version>2022.220809</version>
+    <version>2022.221101</version>
     <packageSourceUrl>https://github.com/overag3/chocolatey-packages/tree/main/gretl</packageSourceUrl>
     <owners>overage, gfe</owners>
     <!-- ============================== -->
