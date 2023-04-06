@@ -1,5 +1,5 @@
 ﻿$ErrorActionPreference = 'Stop'
-$url = 'https://github.com/rancher-sandbox/rancher-desktop/releases/download/v1.7.0/Rancher.Desktop.Setup.1.7.0.exe'
+$url = 'https://github.com/rancher-sandbox/rancher-desktop/releases/download/v1.8.1/Rancher.Desktop.Setup.1.8.1.exe'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
